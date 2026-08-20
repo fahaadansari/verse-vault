@@ -1,0 +1,281 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+    
+    background: 
+        radial-gradient(circle at 50% 30%, rgba(20, 83, 73, 0.85) 0%, rgba(10, 46, 40, 0.95) 70%, rgba(5, 26, 23, 1) 100%),
+        repeating-linear-gradient(45deg, rgba(212, 175, 55, 0.03) 0px, rgba(212, 175, 55, 0.03) 2px, transparent 2px, transparent 25px),
+        #0a2e28;
+    background-blend-mode: overlay, normal, normal;
+    position: relative;
+    overflow-x: hidden;
+
+
+
+   min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+
+
+  background: 
+    linear-gradient(rgba(15, 32, 39, 0.75), rgba(44, 83, 100, 0.75)),
+    url('https://static.vecteezy.com/system/resources/previews/017/641/850/non_2x/background-design-with-islamic-theme-with-illustrations-of-mosques-for-the-celebration-of-islamic-holidays-free-vector.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Softens pixelation artifacts */
+  filter: contrast(105%);
+
+}
+
+
+body::before {
+    content: '';
+    position: absolute;
+    width: 650px;
+    height: 750px;
+    border: 2px solid rgba(212, 175, 55, 0.15);
+    border-radius: 50% 50% 0 0 / 40% 40% 0 0; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -52%);
+    pointer-events: none;
+    box-shadow: 0 0 80px rgba(212, 175, 55, 0.05), inset 0 0 50px rgba(212, 175, 55, 0.05);
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    width: 850px;
+    height: 950px;
+    border: 1.5px solid rgba(212, 175, 55, 0.08);
+    border-radius: 50% 50% 0 0 / 40% 40% 0 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -52%);
+    pointer-events: none;
+}
+
+
+.login-container {
+    width: 100%;
+    max-width: 600px;
+    z-index: 10;
+    position: relative;
+}
+
+
+.login-card {
+    background: #FAF7F0; 
+    padding: 38px 32px;
+    border-radius: 20px;
+    box-shadow: 
+        0 20px 50px rgba(0, 0, 0, 0.45),
+        0 0 0 1px rgba(212, 175, 55, 0.3),
+        inset 0 0 15px rgba(255, 255, 255, 0.8);
+    text-align: center;
+    position: relative;
+    backdrop-filter: blur(5px);
+}
+
+
+.login-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, #D4AF37, #2D6A4F, #D4AF37, transparent);
+    border-radius: 0 0 10px 10px;
+}
+
+
+#QuranQuote h2 {
+    font-family: 'Cinzel', serif;
+    color: #0F382C;
+    font-size: 1.65rem;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.custom-select {
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 0.98rem;
+    font-family: 'Poppins', sans-serif;
+    color: #123C30;
+    background-color: #FFFFFF;
+    border: 1.5px solid #C5A059; 
+    border-radius: 12px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.03);
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cpath fill='%23d4af37' fill-opacity='0.08' d='M40 0l10 30h30l-24 18 9 30-25-18-25 18 9-30-24-18h30z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 16px;
+}
+
+.custom-select:hover, .custom-select:focus {
+    border-color: #0F382C;
+    box-shadow: 0 0 0 3px rgba(15, 56, 44, 0.12);
+}
+
+
+.verse-display {
+    background: #F3EFE6;
+    border: 1px solid rgba(197, 160, 89, 0.35);
+    border-radius: 14px;
+    padding: 26px 20px;
+    margin-bottom: 26px;
+    position: relative;
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.02);
+}
+
+
+.verse-display::after {
+    content: '◈';
+    position: absolute;
+    bottom: 8px;
+    right: 12px;
+    font-size: 10px;
+    color: #C5A059;
+    opacity: 0.6;
+}
+
+
+.arabic-text {
+    font-family: 'Amiri', serif;
+    font-size: 2.1rem;
+    line-height: 1.8;
+    color: #0A2E28;
+    font-weight: 700;
+    margin-bottom: 14px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+
+.translation-text {
+    font-size: 1.02rem;
+    line-height: 1.6;
+    color: #3D4F48;
+    font-weight: 400;
+    margin-bottom: 12px;
+    font-style: italic;
+}
+
+
+.verse-ref {
+    display: inline-block;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #8C6D23;
+    letter-spacing: 0.5px;
+}
+
+
+.button-group {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    padding: 13px 24px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-radius: 30px; 
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+
+#generateBtn {
+    background: linear-gradient(135deg, #0F382C 0%, #1B5E4B 100%);
+    color: #FFFFFF;
+    flex: 2;
+    box-shadow: 0 6px 18px rgba(15, 56, 44, 0.3);
+}
+
+#generateBtn:hover {
+    background: linear-gradient(135deg, #164E3E 0%, #237A62 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(15, 56, 44, 0.4);
+}
+
+#generateBtn:active {
+    transform: translateY(0);
+}
+
+
+.btn-copy {
+    background-color: transparent;
+    color: #0F382C;
+    border: 1.5px solid #0F382C;
+    flex: 1;
+}
+
+.btn-copy:hover {
+    background-color: rgba(15, 56, 44, 0.08);
+    transform: translateY(-2px);
+}
+
+.btn-copy:active {
+    transform: translateY(0);
+}
+
+
+@media (max-width: 480px) {
+    .login-card {
+        padding: 26px 20px;
+    }
+    .arabic-text {
+        font-size: 1.7rem;
+    }
+    .button-group {
+        flex-direction: column;
+    }
+    .btn {
+        width: 100%;
+    }
+}
